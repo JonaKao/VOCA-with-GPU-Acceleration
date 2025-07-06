@@ -46,7 +46,7 @@ git clone https://github.com/TimoBolkart/voca.git
 Set up virtual environment:
 ```
 mkdir <your_home_dir>/.virtualenvs
-python3 -m venv <your_home_dir>/.virtualenvs/voca
+python3.7 -m venv <your_home_dir>/.virtualenvs/voca
 ```
 
 Activate virtual environment:
@@ -55,17 +55,17 @@ cd voca
 source <your_home_dir>/voca/bin/activate
 ```
 
-Make sure your pip version is up-to-date:
+Set the right pip version:
 ```
-pip install -U pip
-```
-
-The requirements (including tensorflow) can be installed using:
-```
-pip install -r requirements.txt
+pip install -U pip==22.0.4
 ```
 
 Install mesh processing libraries from [MPI-IS/mesh](https://github.com/MPI-IS/mesh) within the virtual environment.
+
+Finally, the requirements (including tensorflow) can be installed using:
+```
+pip install -r requirements.txt
+```
 
 ## Data
 
@@ -74,6 +74,11 @@ Install mesh processing libraries from [MPI-IS/mesh](https://github.com/MPI-IS/m
 Download the trained VOCA model, audio sequences, and template meshes from [MPI-IS/VOCA](https://voca.is.tue.mpg.de).<br/>
 Download FLAME model from [MPI-IS/FLAME](http://flame.is.tue.mpg.de/).<br/>
 Download the trained DeepSpeech model (v0.1.0) from [Mozilla/DeepSpeech](https://github.com/mozilla/DeepSpeech/releases/tag/v0.1.0) (i.e. deepspeech-0.1.0-models.tar.gz).
+
+To download and prepare these data, run:
+```
+./fetch_data.sh
+```
 
 #### Data used to train VOCA
 
