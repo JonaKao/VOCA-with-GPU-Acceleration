@@ -1,6 +1,6 @@
 # [VOCA: Voice Operated Character Animation](https://voca.is.tue.mpg.de)
 
-This is an official [VOCA](https://voca.is.tue.mpg.de) repository.
+This is a modified [VOCA](https://voca.is.tue.mpg.de) repository with increased batch loading capabilites to speed up real time rendering.
 
 <p align="center"> 
 <img src="gif/speech_driven_animation.gif">
